@@ -4,132 +4,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <!-- <style>
-        #section {
-
-            display: flex;
-            gap: 20px;
-            justify-content: space-around;
-            align-items: center;
-
-            #div1 {
-
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-                justify-content: space-around;
-                align-items: center;
-
-                height: 200px;
-                width: 300px;
-                border: 2px solid red;
-            }
-            #div2 {
-
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-                justify-content: space-around;
-                align-items: center;
-
-                height: 200px;
-                width: 300px;
-                border: 2px solid red;
-            }
-            #div3 {
-
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-                justify-content: space-around;
-                align-items: center;
-
-                height: 200px;
-                width: 300px;
-                border: 2px solid red;
-            }
-
-        }
-    </style> -->
-
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 
+    <!-- Devicon for skill logos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-   
+    <!-- ====== NAVBAR ====== -->
+    <header>
+        <nav>
+            <h1 class="logo">SANJANA BHADORIYA</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- <h1 id="head"></h1>
+    <section id="home" class="home">
+  <div class="home-container">
     
-    <h2 class="head"></h2>
-    <h2 class="head"></h2>
-
-    <div class="head">
-
-
+    <!-- Left Side: Intro -->
+    <div class="home-content">
+      <h1>
+        Hi, I'm 
+        <span class="shine">SANJANA BHADORIYA</span>
+      </h1>
+      <h2>Java Developer | Backend Enthusiast | Problem Solver</h2>
+      <p>
+        I am a motivated and recently graduated B.Tech student with strong knowledge of 
+        Java, Hibernate, JDBC, Servlet, Spring, Spring Boot, HTML, CSS, JavaScript, SQL, and software development.
+      </p>
+       <div class="home-buttons">
+                <a href="#contact" class="btn">Contact Me</a>
+                <a href="https://drive.google.com/file/d/1xBnSzQSCf9BQIle6o7Ufot8ZpbI_ZZkw/view?usp=drivesdk" download
+                    class="btn">Download Resume</a>
+            </div>
     </div>
 
-    <h2 class="div"></h2> -->
+    <!-- Right Side: Developer Animation -->
+    <div class="home-animation">
+      <lottie-player 
+        src="https://assets10.lottiefiles.com/packages/lf20_cwqf5i6h.json"  
+        background="transparent"  
+        speed="1"  
+        loop  
+        autoplay>
+      </lottie-player>
+    </div>
 
-<!-- 
-    <button><h1 onclick="green()">HELLO WORLD</h1></button>
-    <button><h1 ondblclick="red()">HELLO</h1></button>
+  </div>
+</section>
 
-    <br>
-    <br>
 
-    <section id="section">
-
-        <div id="div1">
-
-            <h1 onmouseenter="onmouseEnter()">onmouseenter</h1>
-
+    <!-- ====== HOME ====== -->
+    <!-- <section id="home" class="section home">
+        <div class="home-content">
+            <h2>Hello, I'm <span class="typing">SANJANA BHADORIYA</span></h2>
+            <p>Aspiring Java Full Stack Developer | Problem Solver | Learner</p>
+           
         </div>
+       
+    </section> -->
 
-        <div id="div2">
-
-            <h1 onmouseover="onmouseOver()">onmouseover</h1>
-
-        </div>
-
-        <div id="div3">
-
-            <h1 onmousemove="onmouseMove()">onmousemove</h1>
-
-        </div>
-
+    <!-- ====== ABOUT ====== -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <p>
+            I am a passionate developer with experience in Java, Web Development, and Database Management.
+            I love solving problems, building projects, and constantly learning new technologies to grow my skills.
+        </p>
     </section>
- -->
 
-    <!-- <input type="text" placeholder="Enter value" onkeydown="rndmColor()" onkeyup="rndmColor()"> -->
+    <!-- ====== EDUCATION ====== -->
+    <section id="education" class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="edu-card">
+            <h3>Bachelor of Technology (B.Tech)</h3>
+            <p>Computer Science & Engineering | XYZ University</p>
+            <span>2021 - 2025</span>
+        </div>
+        <div class="edu-card">
+            <h3>Higher Secondary Education</h3>
+            <p>CBSE Board | ABC School</p>
+            <span>2019 - 2021</span>
+        </div>
+    </section>
 
-    
-<!-- // async await -->
+    <!-- ====== PROJECTS ====== -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>RaktSeva</h3>
+                <p>A blood donation portal connecting donors and receivers. Built with HTML, CSS, JS, Java, MySQL.</p>
+            </div>
+            <div class="project-card">
+                <h3>Library Management System</h3>
+                <p>Core Java + MySQL based system with OOP concepts for managing books, users, and transactions.</p>
+            </div>
+            <div class="project-card">
+                <h3>DSA Tracker</h3>
+                <p>Web-based tool to track problem-solving progress in Data Structures & Algorithms.</p>
+            </div>
+        </div>
+    </section>
 
-    <table>
+    <!-- ====== TECHNICAL SKILLS ====== -->
+    <section id="skills" class="section">
+        <h2 class="section-title">Technical Skills</h2>
 
-        <thead>
+        <h3>Programming Languages</h3>
+        <div class="skills-container">
+            <span class="skill-tag"><i class="devicon-java-plain colored"></i> Java</span>
+            <span class="skill-tag"><i class="devicon-html5-plain colored"></i> HTML</span>
+            <span class="skill-tag"><i class="devicon-css3-plain colored"></i> CSS</span>
+            <span class="skill-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+            <span class="skill-tag"><i class="devicon-mysql-plain colored"></i> SQL</span>
+        </div>
 
-            <th>id</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>price</th>
-            <th>image</th>
+        <h3>Backend & Database</h3>
+        <div class="skills-container">
+            <span class="skill-tag"><i class="devicon-java-plain colored"></i> Core Java (OOPs, JDBC)</span>
+            <span class="skill-tag"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+            <span class="skill-tag"><i class="devicon-hibernate-plain colored"></i> Hibernate</span>
+            <span class="skill-tag"><i class="devicon-spring-plain colored"></i> Spring</span>
+            <span class="skill-tag"><i class="devicon-spring-plain colored"></i> SpringBoot</span>
+        </div>
 
-        </thead>
+        <h3>CS Fundamentals</h3>
+        <div class="skills-container">
+            <span class="skill-tag">Data Structures & Algorithms</span>
+            <span class="skill-tag">Operating Systems</span>
+            <span class="skill-tag">Computer Networks</span>
+        </div>
 
-        <tbody  id = "tbody">
+        <h3>Tools & Platforms</h3>
+        <div class="skills-container">
+            <span class="skill-tag"><i class="devicon-eclipse-plain colored"></i> Eclipse</span>
+            <span class="skill-tag"><i class="devicon-mysql-plain colored"></i> MySQL Workbench</span>
+            <span class="skill-tag"><i class="devicon-vscode-plain colored"></i> VS Code</span>
+            <span class="skill-tag"><i class="devicon-git-plain colored"></i> Git (basic)</span>
+        </div>
 
+        <h3>Other Skills</h3>
+        <div class="skills-container">
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Logical Thinking</span>
+        </div>
+    </section>
 
+    <!-- ====== CONTACT ====== -->
+    <section id="contact" class="section contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-        </tbody>
+    <!-- ====== FOOTER ====== -->
+    <footer>
+        <p>© 2025 Your Name | Built with ❤️</p>
+    </footer>
 
-    </table>
-
- <script src="app.js"></script>
 </body>
 
 </html>
