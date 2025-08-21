@@ -1,0 +1,317 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== NAVBAR ===== */
+header {
+  background: #111;
+  padding: 15px 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #ff4d6d;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  padding: 100px 50px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ff4d6d;
+}
+
+/* ===== HOME ===== */
+
+
+/* Home Section */
+.home {
+  padding: 100px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #0f0f0f; /* black */
+  color: #fff;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Left Side Content */
+.home-content {
+  flex: 1;
+}
+
+.home-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.home-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  background: linear-gradient(to right, #ff4d6d, #ff6a88);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-content p {
+  font-size: 0.6rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  max-width: 500px;
+  color: #ddd;
+}
+
+/* Shiny Name */
+.shine {
+  background: linear-gradient(to right, #ff4d6d, #ff6a88);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.shine::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  animation: shine 2.5s infinite;
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+/* Button */
+.home-content .btn {
+  padding: 12px 24px;
+  background: linear-gradient(to right, #ff4d6d, #ff6a88);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.home-content .btn:hover {
+  opacity: 0.9;
+}
+
+/* Right Side Animation */
+.home-animation {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-animation lottie-player {
+  width: 400px;
+  height: 400px;
+}
+
+
+.home-content span {
+  color: #ffe600;
+   background: linear-gradient(
+    90deg, 
+    #f5da2c, 
+    #ffe6a7, 
+    hsl(55, 92%, 67%)
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+@keyframes shine {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+} 
+
+.home-buttons{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 30px;
+  background: #111;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #f5a5b9;
+  border: 2px  solid #111 ;
+  color: #040303;
+  font-weight: bold;
+}
+
+/* ===== ABOUT ===== */
+
+
+/* ===== EDUCATION ===== */
+.edu-card {
+  background: #fff;
+  margin: 15px auto;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* ===== PROJECTS ===== */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== SKILLS ===== */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.skill-tag {
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 25px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.3s, background 0.3s;
+  cursor: default;
+}
+
+.skill-tag:hover {
+  background: #ff4d6d;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+/* ===== CONTACT ===== */
+.contact-container {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  width: 100%;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+  margin-top: 40px;
+}
